@@ -9,10 +9,10 @@ if (isset($_POST['enviar'])) {
 
     if($conex){
         echo "<p>😊👍</p>";
-        //necesitamos averiguar totos los usuarios que se encuentran en la tabla prueba
+        //necesitamos averiguar todos los usuarios que se encuentran en la tabla prueba
         $select="SELECT * FROM prueba";
         $dato=mysqli_query($conex,$select);
-        //creo un array para migrar a todos los de la tabla dentro del array
+        //creo un array para migrar a todos los usuarios de la tabla prueba dentro del array
         $miArray=array();
         //con el siclo while puedo recorrer las filas de la tabla prueba
         while($fila=mysqli_fetch_assoc($dato)){
